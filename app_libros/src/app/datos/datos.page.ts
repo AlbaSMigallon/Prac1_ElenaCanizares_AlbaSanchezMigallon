@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./datos.page.scss'],
 })
 export class DatosPage implements OnInit {
-
+  PC="desktop-outline";
   constructor() { }
 
   ngOnInit() {
