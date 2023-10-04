@@ -1,0 +1,10 @@
+/* Estilo para los botones dentro del ion-fab */
+ion-fab-button {
+    font-size: 20px; /* Tamaño del texto */
+    width: 200px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    text-align: left; /* Alineación del texto a la izquierda */
+    padding-left: 10px; /* Espacio a la izquierda del texto */
+    --background: #17a757; /* Cambia el color de fondo a tu preferencia */
+    color: white; /* Cambia el color del texto a tu preferencia */
+  }

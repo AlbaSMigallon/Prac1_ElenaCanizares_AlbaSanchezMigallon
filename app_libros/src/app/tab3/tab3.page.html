@@ -1,17 +1,52 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tab 3</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <!-- Agregar varias ion-card -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Tarjeta 1</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-icon name="star"></ion-icon>
+      Contenido de la tarjeta 
+    </ion-card-content>
+    <ion-button expand="full" (click)="abrirImagen()">Botón 1</ion-button>
+  </ion-card>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Tarjeta de imagen</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-img
+  src="https://docs-demo.ionic.io/assets/madison.jpg"
+  alt="The Wisconsin State Capitol building in Madison, WI at night"
+></ion-img>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  
+
+  <!-- Agregar ion-fab con botones desplegables -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="abrirPaginaWeb('https://www.casadellibro.com/libros-ebooks-gratis/184')">La casa del libro</ion-fab-button>
+      <ion-fab-button (click)="abrirPaginaWeb('https://www.fnac.es/n710/Libros-mas-vendidos?origin=SEA_GOOG_BR_Libros&gclid=Cj0KCQjwmvSoBhDOARIsAK6aV7h4-2-TALgmf5UB_KCCW_phM0TMsKDEMMIdfh3mJipKem25DrqeIlIaAvszEALw_wcB&gclsrc=aw.ds')">Fnac</ion-fab-button>
+      <ion-fab-button (click)="abrirPaginaWeb('https://www.librerias-picasso.com/')">Picasso</ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
+
+
+
