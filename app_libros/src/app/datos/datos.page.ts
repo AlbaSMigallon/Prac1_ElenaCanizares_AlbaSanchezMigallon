@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatosPage implements OnInit {
   PC="desktop-outline";
-  logo_libro="C:\Users\Alba\Documents\EFA FP DAM\2_DAM\Móviles\Tema 1\ionic_apps\Prac1_ElenaCanizares_AlbaSanchezMigallon\app_libros\libro.png";
+  logo_libro=".\libro.png";
   
   constructor() { }
 
