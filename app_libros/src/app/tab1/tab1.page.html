@@ -1,5 +1,4 @@
 
-
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -18,58 +17,58 @@
 
   <ion-list>
     <ion-item>
-      <ion-avatar >
-        <img  [src]="viento" />
+      <ion-avatar>
+        <img [src]="viento" />
       </ion-avatar>
-      <ion-checkbox>El nombre del viento, Patrick Rotfuss</ion-checkbox>
+      <ion-checkbox (ionChange)="mostrarToast('El nombre del viento, Patrick Rotfuss')">El nombre del viento, Patrick Rotfuss</ion-checkbox>
     </ion-item>
     <ion-item>
-      <ion-avatar >
-        <img  [src]="anillo" />
+      <ion-avatar>
+        <img [src]="anillo" />
       </ion-avatar>
-      <ion-checkbox>El señor de los anillos, Tolkien</ion-checkbox>
+      <ion-checkbox (ionChange)="mostrarToast('El señor de los anillos, Tolkien')">El señor de los anillos, Tolkien</ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-avatar >
         <img  [src]="naranja" />
       </ion-avatar>
-      <ion-checkbox>El priorato del naranjo, Samantha Shannon</ion-checkbox>
+      <ion-checkbox (ionChange)="mostrarToast('El priorato del naranjo, Samantha Shannon')">El priorato del naranjo, Samantha Shannon</ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-avatar >
         <img  [src]="hada" />
       </ion-avatar>
-      <ion-checkbox>Cuento de hadas, Stephen King</ion-checkbox>
+      <ion-checkbox (ionChange)="mostrarToast('Cuento de hadas, Stephen King')">Cuento de hadas, Stephen King</ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-avatar >
         <img  [src]="espada" />
       </ion-avatar>
-      <ion-checkbox>Canción de hielo y fuego, George R.R. Martin</ion-checkbox>
+      <ion-checkbox (ionChange)="mostrarToast('Canción de hielo y fuego, George R.R. Martin')">Canción de hielo y fuego, George R.R. Martin</ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-avatar >
         <img  [src]="mago" />
       </ion-avatar>
-      <ion-checkbox>Harry Potter, J.K. Rowlin</ion-checkbox>
+      <ion-checkbox (ionChange)="mostrarToast('Harry Potter, J.K. Rowlin')">Harry Potter, J.K. Rowlin</ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-avatar >
         <img  [src]="dragon" />
       </ion-avatar>
-      <ion-checkbox>memorias de Idhun, Laura Gallego</ion-checkbox>
+      <ion-checkbox (ionChange)="mostrarToast('memorias de Idhun, Laura Gallego')">memorias de Idhun, Laura Gallego</ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-avatar >
         <img  [src]="magia" />
       </ion-avatar>
-      <ion-checkbox>El imperio final, Brandon Sanderson</ion-checkbox>
+      <ion-checkbox (ionChange)="mostrarToast('El imperio final, Brandon Sanderson')">El imperio final, Brandon Sanderson</ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-avatar >
         <img  [src]="cuervo" />
       </ion-avatar>
-      <ion-checkbox>Seis de cuervos, Leigh Bardugo</ion-checkbox>
+      <ion-checkbox (ionChange)="mostrarToast('Seis de cuervos, Leigh Bardugo')">Seis de cuervos, Leigh Bardugo</ion-checkbox>
     </ion-item>
   </ion-list>
 
