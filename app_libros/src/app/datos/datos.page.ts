@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatosPage implements OnInit {
   PC="desktop-outline";
-  logo_libro="./src/assets/icon/libro.png";
-  
+ 
   constructor() { }
 
   ngOnInit() {
