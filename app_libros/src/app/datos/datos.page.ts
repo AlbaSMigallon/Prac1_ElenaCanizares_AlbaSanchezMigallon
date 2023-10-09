@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatosPage implements OnInit {
   PC="desktop-outline";
- 
+
+  
   constructor() { }
 
   ngOnInit() {
