@@ -17,39 +17,57 @@
   <ion-list>
     <ion-item>
       <ion-icon name="flash-outline"></ion-icon>
-      <ion-checkbox class="custom-checkbox">Frankenstein, Mary Shelley</ion-checkbox>
+      <ion-checkbox class="custom-checkbox" [(ngModel)]="books['frankenstein']" (ionChange)="onBookCheckedChange('frankenstein')">
+        Frankenstein, Mary Shelley
+      </ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-icon name="balloon-outline"></ion-icon>
-      <ion-checkbox class="custom-checkbox red">It, Stephen King</ion-checkbox>
+      <ion-checkbox class="custom-checkbox red" [(ngModel)]="books['it']" (ionChange)="onBookCheckedChange('it')">
+        It, Stephen King
+      </ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-icon name="thunderstorm-outline"></ion-icon>
-      <ion-checkbox class="custom-checkbox yellow">El fantasma de Carterville, Oscar Wilde</ion-checkbox>
+      <ion-checkbox class="custom-checkbox yellow" [(ngModel)]="books['carterville']" (ionChange)="onBookCheckedChange('carterville')">
+        El fantasma de Carterville, Oscar Wilde
+      </ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-icon name="moon-outline"></ion-icon>
-      <ion-checkbox class="custom-checkbox green">Cuestra parte de Noche, Mariana Enriquez</ion-checkbox>
+      <ion-checkbox class="custom-checkbox green" [(ngModel)]="books['cuestaNoche']" (ionChange)="onBookCheckedChange('cuestaNoche')">
+        Cuesta parte de Noche, Mariana Enriquez
+      </ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-icon name="diamond-outline"></ion-icon>
-      <ion-checkbox class="custom-checkbox pink">La fase del rubí, Pilar Pedraza</ion-checkbox>
+      <ion-checkbox class="custom-checkbox pink" [(ngModel)]="books['faseRubí']" (ionChange)="onBookCheckedChange('faseRubí')">
+        La fase del rubí, Pilar Pedraza
+      </ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-icon name="footsteps-outline"></ion-icon>
-      <ion-checkbox class="custom-checkbox blue">La casa y el cerebro, Bulwer Lytton</ion-checkbox>
+      <ion-checkbox class="custom-checkbox blue" [(ngModel)]="books['casaCerebro']" (ionChange)="onBookCheckedChange('casaCerebro')">
+        La casa y el cerebro, Bulwer Lytton
+      </ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-icon name="skull-outline"></ion-icon>
-      <ion-checkbox class="custom-checkbox purple">El pozo y el péndulo, Poe</ion-checkbox>
+      <ion-checkbox class="custom-checkbox purple" [(ngModel)]="books['pozoPéndulo']" (ionChange)="onBookCheckedChange('pozoPéndulo')">
+        El pozo y el péndulo, Poe
+      </ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-icon name="planet-outline"></ion-icon>
-      <ion-checkbox class="custom-checkbox white">La llama de Cthulhu, H.P. Lovecraft</ion-checkbox>
+      <ion-checkbox class="custom-checkbox white" [(ngModel)]="books['cthulhu']" (ionChange)="onBookCheckedChange('cthulhu')">
+        La llama de Cthulhu, H.P. Lovecraft
+      </ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-icon name="water-outline"></ion-icon>
-      <ion-checkbox class="custom-checkbox white">Drácula, Bram Stoker</ion-checkbox>
+      <ion-checkbox class="custom-checkbox white" [(ngModel)]="books['dracula']" (ionChange)="onBookCheckedChange('dracula')">
+        Drácula, Bram Stoker
+      </ion-checkbox>
     </ion-item>
   </ion-list>
   <app-explore-container name="Tab 2 page"></app-explore-container>
